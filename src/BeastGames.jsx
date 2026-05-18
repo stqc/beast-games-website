@@ -94,19 +94,22 @@ const portfolioItems = [
       { title: "WW2 Soldier", thumb: gd("1ogmKJPWSVv3BABASPM5cLiOWdxv1PISG"), images: ["1wZD5zc9jN3X98IyKxEXVPpiBbvZM5v3o","1v_yKNuXq6Wfh9FqAo2V9TXC719K7Q9FP","19HZKIS6SF2HgU41TKjNYHvrWUYsD1SGr","1GFY8rBjONjygZ_wRyxlkHL8PIhqGrMYs","1I11Ivg146Du-e0Mqx4X3HhNMtzjFbjBV","1SRFugNyte6WBLzbbQxAOwIIOatCDFCui","1y0Muj45ReXvTEm83Xrz_qEHzV7tfFxUn"].map(gd) },
     ],
   },
-  {
-    title: "3D Stylised Art", tag: "Stylised", bg: gd("15Wd2trUnsNlWHA_CYM7MIzOCRfJ49V4e"),
-    projects: [
-      { title: "Elephant", thumb: gd("15Wd2trUnsNlWHA_CYM7MIzOCRfJ49V4e"), images: ["10zvwevRoOrJhpQjc9ajb0-T0KM07TNgO","1APIvCDLs825-r-TuNrBYgGvihaKURJUH","1F1yx-mQ8Gz4LJGsPRzB4uzMR5PQ4ZTpk","1POYIinn0T0-pwBQOhgJb9_fJx5Ug-XcC","1qN7hu7jf8N_9MY1cYh7UYB063szl-gPG","1sIc6V3qPpmJTyKZ3faL6DfgSJeO2LgAP","1BN-TD2hSPc0xsA6K7-G3Ku_KHmT6nAPS","1N9STm6I1WHiks8-rWUQ2w8teKjHOWTP_"].map(gd) },
-      { title: "Anime 02", thumb: gd("1CC-zC60cj41iEzq3BlxlKrqdyvDlZCc_"), images: ["16-6NQ6abHdg6wamsobg2N-ojdbSZ_E_t","1BV-wWHyNSHo--Zu3HTi_NS3OH4ZVzqR4","1Yr3Ac9uzjzEo8Nvf-S9TQI-aYlS5mqYT","1px4TvqkdobhNxThZc0cPGlqrH443CcKu","1RIQmyzedl9NutKHuuXI2asBobTbrlO2h","1XWbPuWR4SfeIv0vYDoIRVUyWa21MMdRG","18vsrxvrzb7jf4OdhTet-89hjiuyCPXfp","1_8grD_Xf6x6y1MqgE-VjJZcddozcAFsm","11wpgrTj1mM_ECtbWyNofl3ZdnuXqHXPU"].map(gd) },
-      { title: "Sci-Fi Character", thumb: gd("1hgS0efiLxvGv3BXdHBBeBnf3zeVCeuOx"), images: ["18DCDECg-lZ2-5Bb8aVjRZ-Be9lQ9HOlG","1JeqMm-4a4tIyvedQBFoO4PjnlSBfDGoG","17DlkD7P0pXREfbXivPdcoOUzXQQxI9m1","1bjm544Feb4YmkQ4yuO_UETfxviPwiv4E","1rmJkSmpyhN0tQgPyuY5IOw475Ylsxl-Q","1JNeUaKbRQnd0aqQO7MtvX1JKZLK2vCxx"].map(gd) },
-      { title: "Anime", thumb: gd("1hwDKAbMpvf7FAIsdSyhoK1evgsLif52z"), images: ["1pIyfh07ssTmxjzuhFLRMoK8pscSWYGzF","1D2cT9rAO97l3_FlbpH_km-KnwTV3a1gN","1SqJtCpMK-LAInFgex2hdXJb-aluneB4L","1PqehDt5cCNMeF9tAgFOeCIIRVapVvURU","15FEs1luLyWwM0iYt1J3RpZdTSvXNh2wO","1lpJig12u-H091kh9ON_TriOS13x_49oE","1tO4MeedxL6gtwnD4AywVkxny6PDbKrdu","1CsZiTF35pHAR_65JVOj2uEl9ypB3Dwki"].map(gd) },
-    ],
-  },
+  // {
+  //   title: "3D Stylised Art", tag: "Stylised", bg: gd("15Wd2trUnsNlWHA_CYM7MIzOCRfJ49V4e"),
+  //   projects: [
+  //     { title: "Elephant", thumb: gd("15Wd2trUnsNlWHA_CYM7MIzOCRfJ49V4e"), images: ["10zvwevRoOrJhpQjc9ajb0-T0KM07TNgO","1APIvCDLs825-r-TuNrBYgGvihaKURJUH","1F1yx-mQ8Gz4LJGsPRzB4uzMR5PQ4ZTpk","1POYIinn0T0-pwBQOhgJb9_fJx5Ug-XcC","1qN7hu7jf8N_9MY1cYh7UYB063szl-gPG","1sIc6V3qPpmJTyKZ3faL6DfgSJeO2LgAP","1BN-TD2hSPc0xsA6K7-G3Ku_KHmT6nAPS","1N9STm6I1WHiks8-rWUQ2w8teKjHOWTP_"].map(gd) },
+  //     { title: "Anime 02", thumb: gd("1CC-zC60cj41iEzq3BlxlKrqdyvDlZCc_"), images: ["16-6NQ6abHdg6wamsobg2N-ojdbSZ_E_t","1BV-wWHyNSHo--Zu3HTi_NS3OH4ZVzqR4","1Yr3Ac9uzjzEo8Nvf-S9TQI-aYlS5mqYT","1px4TvqkdobhNxThZc0cPGlqrH443CcKu","1RIQmyzedl9NutKHuuXI2asBobTbrlO2h","1XWbPuWR4SfeIv0vYDoIRVUyWa21MMdRG","18vsrxvrzb7jf4OdhTet-89hjiuyCPXfp","1_8grD_Xf6x6y1MqgE-VjJZcddozcAFsm","11wpgrTj1mM_ECtbWyNofl3ZdnuXqHXPU"].map(gd) },
+  //     { title: "Sci-Fi Character", thumb: gd("1hgS0efiLxvGv3BXdHBBeBnf3zeVCeuOx"), images: ["18DCDECg-lZ2-5Bb8aVjRZ-Be9lQ9HOlG","1JeqMm-4a4tIyvedQBFoO4PjnlSBfDGoG","17DlkD7P0pXREfbXivPdcoOUzXQQxI9m1","1bjm544Feb4YmkQ4yuO_UETfxviPwiv4E","1rmJkSmpyhN0tQgPyuY5IOw475Ylsxl-Q","1JNeUaKbRQnd0aqQO7MtvX1JKZLK2vCxx"].map(gd) },
+  //     { title: "Anime", thumb: gd("1hwDKAbMpvf7FAIsdSyhoK1evgsLif52z"), images: ["1pIyfh07ssTmxjzuhFLRMoK8pscSWYGzF","1D2cT9rAO97l3_FlbpH_km-KnwTV3a1gN","1SqJtCpMK-LAInFgex2hdXJb-aluneB4L","1PqehDt5cCNMeF9tAgFOeCIIRVapVvURU","15FEs1luLyWwM0iYt1J3RpZdTSvXNh2wO","1lpJig12u-H091kh9ON_TriOS13x_49oE","1tO4MeedxL6gtwnD4AywVkxny6PDbKrdu","1CsZiTF35pHAR_65JVOj2uEl9ypB3Dwki"].map(gd) },
+  //   ],
+  // },
   {
     title: "Real Time Hair", tag: "Hair Grooming", bg: gd("12o_rjW14crERqUlOD91Bw4ELdmG33kNw"),
     projects: [
       { title: "Bob Cut", thumb: gd("12o_rjW14crERqUlOD91Bw4ELdmG33kNw"), images: ["1MafyH_NfwDvx5OVZqrv33hYtOfC5x-Y9","1QITHH17-QxLEghMuVPy5T9pslwQlvrHN","1SaF-gl0Cx_8Bkx0sV4PIZZRf4egvde1q","1nV8QYM-108dOlQtscbJfSoDaMVR-s7WL","1ci73MP3_u_uy1erby7eJ9mhs6xZU7OGz","11wPa98SiKzT7fOtL-dGmlCKuhhNuNTZ-","13gnFGHVXd6oMYA6wygnHpTy57oiXjJxz","1LzbD_cQpOIGrtdJSYaXfqFbK6wZ4L8-C"].map(gd) },
+      {title:"Hunter Hair", thumb:gd("1jlS7iO5gtF6IlWxMtQQTiVRbqcayHAnV"),images:["10WbXe7RFiBs8mZm67m9ffXnNcwk5TW7z","1mIIJ9Qt6d1guqhf2lFBj-djQtRHTox6R","1F0rWlhXgX7rWkGchHyXmqO-dS58GgrWv","14HiB59-xC3hnYyM4JkVIJvbovSaJj_73","14d5UAy1JpScXj34rSpdYfQflTaBolwc0","1MLbstm55K7V5LnaAbDqMvtuzirVHE8bN","15xpoBDcqtPyUh3Mc5A2yf47M6NpDQ-Sx","1gKeMyj6L5ErLd0kSOlNR7LEB-T-xD4Hq"].map(gd)},
+      {title:"Male Hair", thumb:gd("1sUsCMZxQBjnj07aMH0b_Q9n7izibIxzL"),images:["1sUsCMZxQBjnj07aMH0b_Q9n7izibIxzL","1v3lo2owhScHq3URLuNidBEoe4rnnqRdX","1zFQ2ucwu7HABDCp9WipxgufPz89f5oh-","17ou0J5pVudsQtunyBfgFJi13xmMPnJAw","1ok94Xig5Cg_8vHdf_ONPy-2c6QPRqVOZ","1Wd-QAWkCsuzm00jUgb4RTWQJB3leghIO"].map(gd)},
+
     ],
   },
   {
@@ -132,7 +135,7 @@ const portfolioItems = [
     ],
   },
   // { title: "Rigging", tag: "Skeletal & Facial", bg: hp1, images: [hp1, img26, sh1] },
-  // { title: "Props and Accessories", tag: "Hero Props", bg: sh2, spanCol: true, images: [sh2, hp1, img26] },
+  { title: "Props and Accessories", tag: "Hero Props", bg: sh2, spanCol: true, images: [sh2, hp1, img26] },
 ];
 
 const processSteps = [
@@ -694,13 +697,13 @@ export default function BeastGamesInteractive() {
                   }} />
                   <div style={{ position:"relative", zIndex:1 }}>
                     <div style={{ position:"absolute", top: isWide ? 16 : 10, right: isWide ? 20 : 12, fontFamily:"'Bebas Neue',sans-serif", fontSize: isMobile ? "2rem" : isWide ? "4.5rem" : "3.5rem", color:"rgba(255,255,255,0.06)" }}>{s.num}</div>
-                    <div style={{
+                    {/* <div style={{
                       width: isMobile ? 36 : isWide ? 56 : 48, height: isMobile ? 36 : isWide ? 56 : 48,
                       display:"flex", alignItems:"center", justifyContent:"center",
                       fontSize: isMobile ? "1.1rem" : isWide ? "1.7rem" : "1.4rem",
                       marginBottom: isMobile ? 12 : isWide ? 32 : 24,
                       background:"rgba(255,60,31,0.08)", border:"1px solid rgba(255,60,31,0.12)", color:"#ff3c1f"
-                    }}>{s.icon}</div>
+                    }}>{s.icon}</div> */}
                     <h3 style={{ fontFamily:"'Exo 2',sans-serif", fontSize: isMobile ? ".9rem" : isWide ? "1.25rem" : "1.1rem", fontWeight:700, letterSpacing:.5, marginBottom: isMobile ? 8 : isWide ? 18 : 14 }}>{s.title}</h3>
                     <p style={{ fontSize: isMobile ? ".8rem" : isWide ? "1.02rem" : ".92rem", lineHeight:1.65, color:"#8a8a9a" }}>{s.desc}</p>
                   </div>
@@ -721,13 +724,13 @@ export default function BeastGamesInteractive() {
           <FadeUp delay={0.15}>
             <div style={{
               display:"grid",
-              gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
+              gridTemplateColumns: "repeat(2, 1fr)",
               gridAutoRows: isMobile ? 160 : isWide ? 360 : 280,
               gap: isMobile ? 3 : isWide ? 6 : 4,
             }}>
               {portfolioItems.map((p, i) => {
-                const colSpan = isMobile ? 1 : ((i === 0 || p.spanCol) ? 2 : 1);
-                const rowSpan = isMobile ? 1 : (i === 0 ? 2 : 1);
+                const colSpan = 2;
+                const rowSpan = 1;
                 return (
                   <ImageTile
                     key={i}
