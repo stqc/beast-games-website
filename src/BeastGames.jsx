@@ -866,7 +866,7 @@ export default function BeastGamesInteractive() {
       {/* ===== CLIENTS ===== */}
       <section id="clients" style={{ padding:`${sectionVPad}px 0`, background:"#0a0a0f", ...wrapStyle }}>
         <Container style={{ padding:`0 ${pad}px`, marginBottom: isMobile ? 28 : isWide ? 56 : 40 }}>
-          <FadeUp><div style={{ ...labelStyle, justifyContent:"center" }}><span style={{ width: isWide ? 36 : 20, height:1, background:"#ff3c1f", display:"inline-block" }} />Our Clients</div></FadeUp>
+          <FadeUp><div style={{ ...labelStyle }}><span style={{ width: isWide ? 36 : 20, height:1, background:"#ff3c1f", display:"inline-block" }} />Our Clients</div></FadeUp>
           <FadeUp delay={0.1}><h2 style={{ ...headingStyle, textAlign:"center" }}>Trusted By</h2></FadeUp>
         </Container>
         <div style={{ borderTop:"1px solid rgba(255,255,255,0.06)", borderBottom:"1px solid rgba(255,255,255,0.06)", padding: isMobile ? "20px 0" : isWide ? "40px 0" : "28px 0", overflow:"hidden", background:"#101018" }}>
