@@ -135,7 +135,17 @@ const portfolioItems = [
     ],
   },
   // { title: "Rigging", tag: "Skeletal & Facial", bg: hp1, images: [hp1, img26, sh1] },
-  { title: "Props and Accessories", tag: "Hero Props", bg: sh2, spanCol: true, images: [sh2, hp1, img26] },
+  {
+    title: "Props and Accessories", tag: "Hero Props", bg: gd("1pW7-xQt08o1lKyudTgN4akkvepvPSI1W"), spanCol: true,
+    projects: [
+      { title: "Bag 01", thumb: gd("1pW7-xQt08o1lKyudTgN4akkvepvPSI1W"), images: ["1EksQsaSiXx-G5NKAjNHq4dElPUPC7_Lu","12WJaXk_y_eJsYnZt9Uk_TTYaLJrtj45f","1uHjZiwoxORQvAH7xOC0omIo88ipI_T6T","1C-NqzlydhHBh-Qp0HGVYY_ouR2tP6jbc","1kL-ADWHU1P_XCwPb-LMjM-1RashScBmG"].map(gd) },
+      { title: "Bag 02", thumb: gd("1l_eEBGSRiL-YUJuMbAPoeuEfow1tKnta"), images: ["1s_8CfgwICZwV6f3TZBLLVG5kb8oXs6aV","1D32XoKs5ctHaym-bgYnFhvfaV5VXe-BB","12Df_aXncSrPariqO9qTTa8h5PrWtIKXP","1428pMZGbYmZP4sdd89OgeNzLWxWn7rdE","1wZV9aJhpVuAiaMDoB-T5VG2AO4AKBoW8","1uhmwr2g141TdQE9rwZLFPUGB0xUxg5tY"].map(gd) },
+      { title: "Bag 03", thumb: gd("1olcBUSFbuO-GLm2aYO0uM8zczLcefr_L"), images: ["1XMd_D8LAUyvpYskM0zQK_qj9pfsJTsvB","1uFKELyEuzvKrISHSeIxoEcWTtk_SitxD","1nqdqLbBT8WOTfs8yVIfrsc7Ip7ESM964","1Ll0rm2Qboumqpjr8Gic4uPFiwiSK_m9U","1qPccJLVEHjUHWsEJAZQLwWniZABjqT5a","1JJ109m8l9c7mG1HjnNuknPM3nPesOoN0","1ETYtB86waikzNfVJUCEK-nQ57vFmidm4"].map(gd) },
+      { title: "Bag 04", thumb: gd("13MuOTrXdvmgIa9K6GUjmVHHGwbnamgD4"), images: ["1R2KMjo298wLPp3jwvtAKOLHS-Wsu4ZPC","1qG3-4ftk5WSpnPLRy8nzOsIsW6wqkkzH"].map(gd) },
+      { title: "Flintlock Pistol", thumb: gd("1aA9PX2Ky8dKwqc6iRtYAmqzEgqNLctB_"), images: ["13NAjT0VyIN3lVhop9vawRHOC0SdVfF2v","18-_0rV5-z0YrY8Kvll1aqSYPkecEnov9","1n_RlcFCGfNM_3u1UI3Z2cyp3Sjm6mMjo","1p-y8qOEt0_RiKjj5Dbu343gkWvYpTOT5","1Yd5VbZ9ihVkqiCmIz-ag7zsUAECOD8Id","1ImQVmYkBvYQg4CzEYiECyTTXN-GPLRqQ"].map(gd) },
+      { title: "Robo Arm", thumb: gd("1g5Jmh_ql4rmxk_68t1_12RDk5y7BDibF"), images: ["1VhDIlMW1vrF1Gz0baSQZnEu1uF5dzbO_","1nRbWtIE8ZTGkMU36yiuuCAAUDOxEcuLt","1_CUrrqc1IaQk6iDnuUjNrkxGa5R_4Vjy","1ALs3GOI1t0tOCAJAhweuaBN_JL4u86u3"].map(gd) },
+    ],
+  },
 ];
 
 const processSteps = [
@@ -393,7 +403,7 @@ export default function BeastGamesInteractive() {
                 { label: "services", target: "services" },
                 { label: "portfolio", target: "portfolio" },
                 { label: "process", target: "process" },
-                // { label: "Clients", target: "testimonials" },
+                { label: "Clients", target: "clients" },
                 { label: "Careers", target: "contact" },
               ].map(({ label, target }) => (
                 <a key={label} onClick={() => scrollTo(target)} style={{
@@ -463,7 +473,7 @@ export default function BeastGamesInteractive() {
               { label: "services", target: "services" },
               { label: "portfolio", target: "portfolio" },
               { label: "process", target: "process" },
-              // { label: "Clients", target: "testimonials" },
+              { label: "Clients", target: "clients" },
               { label: "Careers", target: "contact" },
               { label: "contact", target: "contact" },
             ].map(({ label, target }, i) => (
@@ -743,15 +753,15 @@ export default function BeastGamesInteractive() {
                   >
                     <div style={{
                       position:"absolute", inset:0,
-                      background:"linear-gradient(to top,rgba(10,10,15,0.95) 0%,rgba(10,10,15,0) 60%)",
-                      opacity: isMobile ? 1 : (hoveredPortfolio === i ? 1 : 0),
-                      transition:"opacity .4s",
-                      display:"flex", flexDirection:"column", justifyContent:"flex-end",
+                      background:"linear-gradient(to top,rgba(10,10,15,0.75) 0%,rgba(10,10,15,0.25) 50%,rgba(10,10,15,0.65) 100%)",
+                      opacity: 1,
+                      display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center",
+                      textAlign:"center",
                       padding: isMobile ? 14 : isWide ? 36 : 28,
                       zIndex:1,
                     }}>
-                      <span style={{ fontSize: isWide ? ".8rem" : ".65rem", color:"#ff3c1f", fontWeight:600, letterSpacing:1, textTransform:"uppercase" }}>{p.tag}</span>
-                      <h4 style={{ fontFamily:"'Exo 2',sans-serif", fontSize: isMobile ? ".82rem" : isWide ? "1.15rem" : "1rem", fontWeight:700, marginTop: isWide ? 6 : 3 }}>{p.title}</h4>
+                      <span style={{ fontSize: isWide ? "1.1rem" : isMobile ? ".85rem" : ".95rem", color:"#ff3c1f", fontWeight:700, letterSpacing:2, textTransform:"uppercase" }}>{p.tag}</span>
+                      <h4 style={{ fontFamily:"'Exo 2',sans-serif", fontSize: isMobile ? "1.3rem" : isWide ? "2.2rem" : "1.7rem", fontWeight:700, marginTop: isWide ? 10 : 8 }}>{p.title}</h4>
                     </div>
                   </ImageTile>
                 );
@@ -851,6 +861,30 @@ export default function BeastGamesInteractive() {
             </FadeUp>
           )}
         </Container>
+      </section>
+
+      {/* ===== CLIENTS ===== */}
+      <section id="clients" style={{ padding:`${sectionVPad}px 0`, background:"#0a0a0f", ...wrapStyle }}>
+        <Container style={{ padding:`0 ${pad}px`, marginBottom: isMobile ? 28 : isWide ? 56 : 40 }}>
+          <FadeUp><div style={{ ...labelStyle, justifyContent:"center" }}><span style={{ width: isWide ? 36 : 20, height:1, background:"#ff3c1f", display:"inline-block" }} />Our Clients</div></FadeUp>
+          <FadeUp delay={0.1}><h2 style={{ ...headingStyle, textAlign:"center" }}>Trusted By</h2></FadeUp>
+        </Container>
+        <div style={{ borderTop:"1px solid rgba(255,255,255,0.06)", borderBottom:"1px solid rgba(255,255,255,0.06)", padding: isMobile ? "20px 0" : isWide ? "40px 0" : "28px 0", overflow:"hidden", background:"#101018" }}>
+          <div style={{ display:"flex", animation:"marquee 60s linear infinite", width:"max-content", alignItems:"center" }}>
+            {[...Array(12)].flatMap((_, gi) => [
+              { id:"19pOwLZLByB2zgVYcdnqwNCQZkzFv1bUH", name:"Daedalic" },
+              { id:"1-ZQKM2CRf9a-1Cx1YBlW31-poRdc5yQU", name:"Keyword" },
+              { id:"16CzuVGwYqILQGaeIAYFCkqYvSvR5kdnn", name:"Plarium" },
+              { id:"1yAJKOHcLXv8Z6OqCSeUQz7q1Ck9jgkvR", name:"Q" },
+            ]).map((c, i) => (
+              <img key={i} src={gd(c.id)} alt={c.name}
+                style={{ height: isMobile ? 36 : isWide ? 72 : 52, width:"auto", objectFit:"contain", filter:"grayscale(100%) brightness(2)", opacity:.55, flexShrink:0, transition:"opacity .3s", paddingRight: isMobile ? 40 : isWide ? 120 : 80 }}
+                onMouseEnter={e => e.currentTarget.style.opacity=1}
+                onMouseLeave={e => e.currentTarget.style.opacity=".55"}
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ===== CTA ===== */}
