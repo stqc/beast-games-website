@@ -104,7 +104,7 @@ const portfolioItems = [
   //   ],
   // },
   {
-    title: "Real Time Hair", tag: "Hair Grooming", bg: gd("12o_rjW14crERqUlOD91Bw4ELdmG33kNw"),
+    title: "Real Time Hair", tag: "Hair Grooming", bg: gd("1BzMFgaodIpBqokjfPo9fEybrzxIt64cD"),
     projects: [
       { title: "Bob Cut", thumb: gd("12o_rjW14crERqUlOD91Bw4ELdmG33kNw"), images: ["1MafyH_NfwDvx5OVZqrv33hYtOfC5x-Y9","1QITHH17-QxLEghMuVPy5T9pslwQlvrHN","1SaF-gl0Cx_8Bkx0sV4PIZZRf4egvde1q","1nV8QYM-108dOlQtscbJfSoDaMVR-s7WL","1ci73MP3_u_uy1erby7eJ9mhs6xZU7OGz","11wPa98SiKzT7fOtL-dGmlCKuhhNuNTZ-","13gnFGHVXd6oMYA6wygnHpTy57oiXjJxz","1LzbD_cQpOIGrtdJSYaXfqFbK6wZ4L8-C"].map(gd) },
       {title:"Hunter Hair", thumb:gd("1jlS7iO5gtF6IlWxMtQQTiVRbqcayHAnV"),images:["10WbXe7RFiBs8mZm67m9ffXnNcwk5TW7z","1mIIJ9Qt6d1guqhf2lFBj-djQtRHTox6R","1F0rWlhXgX7rWkGchHyXmqO-dS58GgrWv","14HiB59-xC3hnYyM4JkVIJvbovSaJj_73","14d5UAy1JpScXj34rSpdYfQflTaBolwc0","1MLbstm55K7V5LnaAbDqMvtuzirVHE8bN","15xpoBDcqtPyUh3Mc5A2yf47M6NpDQ-Sx","1gKeMyj6L5ErLd0kSOlNR7LEB-T-xD4Hq"].map(gd)},
