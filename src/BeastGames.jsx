@@ -919,13 +919,13 @@ export default function BeastGamesInteractive() {
                     background:"#14141f", border:"1px solid rgba(255,255,255,0.1)",
                     minWidth:220, zIndex:10, animation:"fadeIn .2s ease",
                   }}>
-                    <a href="mailto:beastgameinteractive@gmail.com" onClick={() => setEmailPopover(null)}
+                    <a href="mailto:info@beastgame.co" onClick={() => setEmailPopover(null)}
                       style={{ display:"block", padding:"14px 20px", fontFamily:"'Exo 2',sans-serif", fontSize:".75rem", fontWeight:600, letterSpacing:1.5, textTransform:"uppercase", color:"#8a8a9a", textDecoration:"none", transition:"all .2s", borderBottom:"1px solid rgba(255,255,255,0.06)" }}
                       onMouseEnter={e => { e.target.style.color="#f0eee9"; e.target.style.background="rgba(255,255,255,0.04)"; }}
                       onMouseLeave={e => { e.target.style.color="#8a8a9a"; e.target.style.background="transparent"; }}>
                       ✉ Email App
                     </a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=beastgameinteractive@gmail.com" target="_blank" rel="noreferrer" onClick={() => setEmailPopover(null)}
+                    <a href="https://mail.google.com/mail/?view=cm&to=info@beastgame.co" target="_blank" rel="noreferrer" onClick={() => setEmailPopover(null)}
                       style={{ display:"block", padding:"14px 20px", fontFamily:"'Exo 2',sans-serif", fontSize:".75rem", fontWeight:600, letterSpacing:1.5, textTransform:"uppercase", color:"#8a8a9a", textDecoration:"none", transition:"all .2s" }}
                       onMouseEnter={e => { e.target.style.color="#f0eee9"; e.target.style.background="rgba(255,255,255,0.04)"; }}
                       onMouseLeave={e => { e.target.style.color="#8a8a9a"; e.target.style.background="transparent"; }}>
@@ -933,11 +933,11 @@ export default function BeastGamesInteractive() {
                     </a>
                   </div>
                 )}
-                <div onClick={() => navigator.clipboard.writeText("beastgameinteractive@gmail.com")}
+                <div onClick={() => navigator.clipboard.writeText("info@beastgame.co")}
                   style={{ marginTop: 12, fontSize:".75rem", fontFamily:"'Exo 2',sans-serif", color:"#8a8a9a", cursor:"pointer", transition:"all .2s" }}
                   onMouseEnter={e => { e.target.style.color="#f0eee9"; }}
                   onMouseLeave={e => { e.target.style.color="#8a8a9a"; }}>
-                  📋 beastgameinteractive@gmail.com
+                  📋 info@beastgame.co
                 </div>
               </div>
 
