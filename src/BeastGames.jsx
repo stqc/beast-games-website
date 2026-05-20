@@ -379,7 +379,7 @@ export default function BeastGamesInteractive() {
       {/* ===== NAV ===== */}
       <nav style={{
         position:"fixed", top:0, left:0, right:0, zIndex:1000,
-        height: scrolled ? (isWide ? 60 : 54) : (isMobile ? 56 : isWide ? 88 : 80),
+        height: isMobile ? 56 : isWide ? 88 : 80,
         display:"flex", alignItems:"center", justifyContent:"center",
         background: scrolled ? "rgba(10,10,15,0.97)" : "rgba(10,10,15,0.85)",
         backdropFilter:"blur(20px)", WebkitBackdropFilter:"blur(20px)",
