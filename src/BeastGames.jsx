@@ -208,7 +208,7 @@ const ImageTile = ({ src, aspect = "4 / 3", onClick, onMouseEnter, onMouseLeave,
     >
       <img src={src} alt="" onLoad={() => setLoaded(true)} onError={() => setLoaded(true)} style={{ display:"none" }} />
       {/* Image layer */}
-      <div style={{ position:"absolute", inset:0, backgroundImage:`url(${src})`, backgroundSize:"contain", backgroundPosition:"center", opacity: loaded ? 1 : 0, transition:"opacity .55s ease" }} />
+      <div style={{ position:"absolute", inset:0, backgroundImage:`url(${src})`, backgroundSize:"cover", backgroundPosition:"center", opacity: loaded ? 1 : 0, transition:"opacity .55s ease" }} />
       {/* Skeleton overlay */}
       <div style={{ position:"absolute", inset:0, background:"#0d0d18", opacity: loaded ? 0 : 1, transition:"opacity .5s ease", pointerEvents:"none", overflow:"hidden" }}>
         <div style={{ position:"absolute", top:0, bottom:0, width:"35%", background:"linear-gradient(90deg,transparent,rgba(255,255,255,0.045),transparent)", animation:"shimmer 1.6s ease-in-out infinite" }} />
